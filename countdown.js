@@ -1,19 +1,19 @@
 
-num = 1000;
+number = 1000;
 countdownStop = "";
-function fnStart() {
+function fnstart() {
     countdownStop = setInterval(countdown, 100);
 }
 
-function fnStop() {
+function fnstop() {
     clearInterval(countdownStop);
 }
 function countdown() {
-    if (num == 0) {
-        fnStop();
+    if (number == 0) {
+        fnstop();
     } else {
-        num--;
+        number--;
     }
     var countdown = document.getElementById("countdown");
-    countdown.innerHTML = num;
+    countdown.innerHTML = number;
 }
