@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체</title>
+    <style>
+        *{
+            padding-left: 10px;
+        }
+        div{
+            color: indigo;
+            font-size: 30px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        button{
+            font-size: 30px;
+            padding-top: 15px;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            background-color: #ffffff;
+        }
+        span{
+            color: indigo;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1. Date 객체</h1>
+    <h2>날짜와 시간에 관한 정보를 제공하고 사용할 수 있다.</h2>
+    <div id="nowTime"></div>
+    <br><br>
+
+    <h1>2. 순환구조(Rotation, 로테이션) 만들기</h1>
+    <h2>일정시간마다 특정 숫자범위를 순환하는 프로그램 만들기(1~3)</h2>
+    <div>숫자순환 : </div>
+    <div id="rotation"></div>
+    <br>
+    <button type="button" onclick="fnStart()">&#9193;</button>
+    <button type="button" onclick="fnStop()">&#9209;</button>
+    <br><br>
+
+    <h1>3. 카운트다운 만들기</h1>
+    <h2>특정 시간에서 0까지 카운트다운되는 프로그램 만들기</h2>
+    <div>카운트다운 : </div>
+    <div id="countdown"></div>
+    <br>
+    <button type="button" onclick="fnStart()">&#9193;</button>
+    <button type="button" onclick="fnStop()">&#9209;</button>
+    <br><br>
+
+    <h1>4. 만료기간 확인</h1>
+    <span>현재 날짜 :</span>
+    <div id="now"></div><br>
+    <span>미래 날짜 :</span>
+    <div id="future"></div><br>
+    <span>남은 날짜 :</span>
+    <div id="remain"></div>
+    <br>
+
+</body>
+
+<script src="date.js"></script>
+<script src="rotation.js"></script>
+<script src="countdown.js"></script>
+<script src="expiry.js"></script>
+</html>
